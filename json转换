@@ -1,0 +1,13 @@
+public static void main(String[] args) {
+   JSONObject param = new JSONObject();
+   List<String> set1 = new ArrayList<>();
+   set1.add("1111");
+   set1.add("2222");
+   set1.add("3333");
+   set1.add("4444");
+   param.put("set1",set1);
+   String setStr1 = param.getString("set1");
+   JSONArray array1 = JSONArray.parseArray(setStr1);
+   List<String> setList1 = (List) array1;
+   System.out.println(setList1);
+}
